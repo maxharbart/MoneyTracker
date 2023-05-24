@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+    <h1>{% block title %} Expences {% endblock %}</h1>
+    {% for item in expenses %}
+        <div class='expenses'>
+            <h3>id {{ item[0] }}, type: {{ item[1] }}, amount: {{ item[2] }}, category: {{ item[3] }}</h3>
+            <i><p>Added {{ item[4] }}</p></i>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+

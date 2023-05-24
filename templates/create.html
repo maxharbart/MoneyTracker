@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>{%block title %} Add new event {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="type">Type</label>
+            <input type="text" name="type"
+                placeholder="type">
+            </input>
+        </p>
+
+        <p>
+            <label for="value">Value</label>
+            <input type="number" name="value"
+                placeholder="value">
+            </input>
+        </p>
+
+        <p>
+            <label for="category">Category</label>
+            <input type="text" name="category"
+                placeholder="category">
+            </input>
+        </p>
+        
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
